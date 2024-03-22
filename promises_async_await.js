@@ -1,6 +1,12 @@
-// let fs = require("fs");
-let fs = require("fs/promises");
+let fs = require("fs");
+fs.readFile("file.txt", "utf-8",(err, data)=>{
+    console.log(err, data)
+})
 
+console.log("I am a good boy")
+
+//Promises
+let fs = require("fs/promises");
 
 const readThree = async (file1, file2, file3) => {
     let a1 = fs.readFile(file1, "utf-8");
